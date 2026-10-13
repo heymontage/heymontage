@@ -12,18 +12,13 @@
   <link rel="stylesheet" href="content.css?v=20260919">
   <style>
     .campaign-section{padding:36px 0 12px;background:#fff}
-    .campaign-banner{display:grid;grid-template-columns:1.08fr .92fr;overflow:hidden;border-radius:22px;background:#f5f8fd;border:1px solid #e1e8f2;box-shadow:0 15px 45px rgba(16,36,62,.11)}
-    .campaign-copy{padding:clamp(24px,4vw,52px);align-self:center}
-    .campaign-kicker{display:inline-block;padding:8px 15px;background:#0567d9;color:white;border-radius:5px;font-weight:800;font-size:13px;letter-spacing:.045em;margin-bottom:22px}
-    .campaign-copy h2{font:800 clamp(34px,4.5vw,60px)/1.03 Inter,ui-sans-serif,system-ui,sans-serif;color:#10243e;letter-spacing:-.045em;margin:0 0 18px}
-    .campaign-copy h2 span{color:#0567d9}
-    .campaign-copy .campaign-sub{font-size:clamp(18px,2vw,24px);font-weight:750;color:#10243e;margin-bottom:14px}
-    .campaign-copy p{color:#46536b;max-width:570px}
-    .campaign-copy .btn{margin-top:8px}
-    .campaign-copy small{display:block;margin-top:18px;color:#667085;line-height:1.6}
-    .campaign-photo{min-height:440px;background:linear-gradient(90deg,rgba(8,32,60,.07),rgba(8,32,60,.02)),url('assets/projekt-terrasse-bagsvaerd.jpg') center/cover no-repeat}
-    @media(max-width:860px){.campaign-banner{grid-template-columns:1fr}.campaign-photo{min-height:260px;order:-1}.campaign-section{padding:26px 0 0}}
-    @media(max-width:540px){.campaign-photo{min-height:210px}.campaign-copy{padding:26px 22px}.campaign-copy .btn{width:100%;text-align:center}}
+    .campaign-banner{display:block;border-radius:22px;overflow:hidden;box-shadow:0 15px 45px rgba(16,36,62,.11)}
+    .campaign-banner img{display:block;width:100%;height:auto}
+    .campaign-banner:focus-visible{outline:4px solid #0567d9;outline-offset:5px}
+    .campaign-mobile-cta{display:none}
+    .campaign-terms{display:block;margin-top:12px;color:#667085;line-height:1.6}
+    @media(max-width:860px){.campaign-section{padding:26px 0 0}}
+    @media(max-width:540px){.campaign-banner{border-radius:12px}.campaign-mobile-cta{display:flex;margin-top:14px;width:100%;justify-content:center}}
   </style>
 </head>
 <body>
@@ -37,17 +32,11 @@
       </div>
     </section>
     <section class="campaign-section" aria-label="14 dages tømrerkampagne"><div class="container">
-      <div class="campaign-banner">
-        <div class="campaign-copy">
-          <span class="campaign-kicker">14 DAGES KAMPAGNE · 13.–26. OKTOBER</span>
-          <h2><span>Spar 10 %</span> på tømrerarbejde</h2>
-          <p class="campaign-sub">På hele opgaven – inkl. materialer</p>
-          <p>Skal du have udført tømrerarbejde? Få 10 % rabat, når du henvender dig gennem hjemmesiden i kampagneperioden.</p>
-          <a class="btn" href="mailto:info@heymontage.dk?subject=HEY%20Montage%20%E2%80%93%2010%20%25%20t%C3%B8mrerkampagne">Få et uforpligtende tilbud →</a>
-          <small>Gælder nye tømreropgaver på Sjælland ved accept af tilbud senest den 26. oktober 2026. Kan ikke kombineres med andre tilbud.</small>
-        </div>
-        <div class="campaign-photo" role="img" aria-label="Terrasse udført af HEY Montage"></div>
-      </div>
+      <a class="campaign-banner" href="mailto:info@heymontage.dk?subject=HEY%20Montage%20%E2%80%93%2010%20%25%20t%C3%B8mrerkampagne" aria-label="Få et uforpligtende tilbud – spar 10 % på tømrerarbejde">
+        <img src="assets/kampagne-toemrer.webp" width="1672" height="941" alt="HEY Montage &amp; Service ApS: 14 dages kampagne. Spar 10 % på tømrerarbejde på hele opgaven inklusive materialer. Kontakt os gennem hjemmesiden for et uforpligtende tilbud.">
+      </a>
+      <a class="btn campaign-mobile-cta" href="mailto:info@heymontage.dk?subject=HEY%20Montage%20%E2%80%93%2010%20%25%20t%C3%B8mrerkampagne">Få et uforpligtende tilbud →</a>
+      <small class="campaign-terms">Kampagne: 13.–26. oktober 2026. Gælder nye tømreropgaver på Sjælland ved accept af tilbud senest den 26. oktober 2026. Kan ikke kombineres med andre tilbud.</small>
     </div></section>
     <section class="values" aria-label="Vores værdier"><div class="container value-grid">
       <div class="value"><div class="value-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 7.9 7.5 9.5 4.4-1.6 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m8.7 12.1 2.1 2.1 4.7-4.8"/></svg></div><strong>Pålidelig</strong><span>Vi holder vores aftaler</span></div>
